@@ -208,6 +208,7 @@ class _VirtualKeyboardState extends State<VirtualKeyboard> {
       reverseLayout = widget.reverseLayout;
       textController = widget.textController;
       customLayoutKeys = widget.customLayoutKeys ?? customLayoutKeys;
+      builder = widget.builder;
       // Init the Text Style for keys.
       textStyle = TextStyle(
         fontSize: fontSize,
@@ -233,6 +234,7 @@ class _VirtualKeyboardState extends State<VirtualKeyboard> {
     fontSize = widget.fontSize;
     alwaysCaps = widget.alwaysCaps;
     reverseLayout = widget.reverseLayout;
+    builder = widget.builder;
     // Init the Text Style for keys.
     textStyle = TextStyle(
       fontSize: fontSize,
